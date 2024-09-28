@@ -33,7 +33,7 @@ const VoltageChart = (props) => {
         .attr("width", width)
         .attr("height", height + 100)
         .append("g")
-        .attr("transform", `translate(45,5)`);
+        .attr("transform", `translate(45,18)`);
 
       const xScale = d3
         .scaleLinear()
@@ -61,7 +61,7 @@ const VoltageChart = (props) => {
       svg
         .append("text")
         .attr("x", 95)
-        .attr("y", 180)
+        .attr("y", 185)
         .style("text-anchor", "middle")
         .style("fill", "black")
         .text("Time");

@@ -38,7 +38,7 @@ const TPChart = (props) => {
         .attr("height", height + 100)
         .attr("borderRadius", "2")
         .append("g")
-        .attr("transform", `translate(41,30)`)
+        .attr("transform", `translate(22,22)`)
         .attr("marginRight", "10px");
 
       const xScale = d3
@@ -146,7 +146,12 @@ const TPChart = (props) => {
       >
         <i
           class="fa fa-play"
-          style={{ marginTop: "-205px", position: "absolute", color: "white" }}
+          style={{
+            top: "-202px",
+            position: "absolute",
+            color: "white",
+            left: "0px",
+          }}
         ></i>
       </button>
       <link

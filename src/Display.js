@@ -13,6 +13,7 @@ import RollChart from "./r";
 import OpdataChart from "./opdata";
 import data_rows from "./cansat.csv";
 import Tpplay from "./tpbutton";
+import background from "./1725036399005.jpg";
 
 export default function Display() {
   const [toggle, setToggle] = useState(false);
@@ -48,7 +49,7 @@ export default function Display() {
           .append("text")
           .text(dataset.length > 0 ? dataset[0].team_id : "")
           .style("font-family", "serif")
-          .style("font-size", "16px");
+          .style("font-size", "18px");
         d3.select("#time_stamp")
           .text("TIMESTAMP:  ")
           .style("font-family", "times-new-roman")
@@ -58,7 +59,7 @@ export default function Display() {
             dataset.length > 0 ? dataset[dataset.length - 1].time_stamping : ""
           )
           .style("font-family", "serif")
-          .style("font-size", "16px");
+          .style("font-size", "18px");
         d3.select("#packet_count")
           .text("PACKET COUNT:  ")
           .style("font-family", "times-new-roman")
@@ -76,7 +77,7 @@ export default function Display() {
           .append("text")
           .text(dataset.length > 0 ? dataset[dataset.length - 1].latitude : "")
           .style("font-family", "serif")
-          .style("font-size", "16px");
+          .style("font-size", "18px");
         d3.select("#longitude")
           .text("LONGITUDE:  ")
           .style("font-family", "times-new-roman")
@@ -84,7 +85,7 @@ export default function Display() {
           .append("text")
           .text(dataset.length > 0 ? dataset[dataset.length - 1].longitude : "")
           .style("font-family", "serif")
-          .style("font-size", "16px");
+          .style("font-size", "18px");
         d3.select("#time")
           .text("TIME:  ")
           .style("font-family", "times-new-roman")
@@ -92,7 +93,7 @@ export default function Display() {
           .append("text")
           .text(dataset.length > 0 ? dataset[dataset.length - 1].time : "")
           .style("font-family", "serif")
-          .style("font-size", "16px");
+          .style("font-size", "18px");
         d3.select("#sats")
           .text("SATS:  ")
           .style("font-family", "times-new-roman")
@@ -100,7 +101,7 @@ export default function Display() {
           .append("text")
           .text(dataset.length > 0 ? dataset[dataset.length - 1].sats : "")
           .style("font-family", "serif")
-          .style("font-size", "16px");
+          .style("font-size", "18px");
         d3.select("#state")
           .text("STATE:  ")
           .style("font-family", "times-new-roman")
@@ -108,7 +109,7 @@ export default function Display() {
           .append("text")
           .text(dataset.length > 0 ? dataset[dataset.length - 1].state : "")
           .style("font-family", "serif")
-          .style("font-size", "16px");
+          .style("font-size", "18px");
         d3.select("#data")
           .text("LAST DATA COMMAND:  ")
           .style("font-family", "times-new-roman")
@@ -116,81 +117,113 @@ export default function Display() {
           .append("text")
           .text(dataset.length > 0 ? dataset[dataset.length - 1].team_id : "")
           .style("font-family", "serif")
-          .style("font-size", "16px")
+          .style("font-size", "18px")
           .append("text")
           .text(
             dataset.length > 0 ? dataset[dataset.length - 1].time_stamping : ""
           )
           .style("font-family", "serif")
-          .style("font-size", "16px")
+          .style("font-size", "18px")
+          .append("text")
+          .text(", ")
           .append("text")
           .text(
             dataset.length > 0 ? dataset[dataset.length - 1].packet_count : ""
           )
           .style("font-family", "serif")
-          .style("font-size", "16px")
+          .style("font-size", "18px")
+          .append("text")
+          .text(", ")
           .append("text")
           .text(
             dataset.length > 0 ? dataset[dataset.length - 1].baro_altitude : ""
           )
           .style("font-family", "serif")
-          .style("font-size", "16px")
+          .style("font-size", "18px")
+          .append("text")
+          .text(", ")
           .append("text")
           .text(dataset.length > 0 ? dataset[dataset.length - 1].pressure : "")
           .style("font-family", "serif")
-          .style("font-size", "16px")
+          .style("font-size", "18px")
+          .append("text")
+          .text(", ")
           .append("text")
           .text(dataset.length > 0 ? dataset[dataset.length - 1].temp : "")
           .style("font-family", "serif")
-          .style("font-size", "16px")
+          .style("font-size", "18px")
+          .append("text")
+          .text(", ")
           .append("text")
           .text(dataset.length > 0 ? dataset[dataset.length - 1].voltage : "")
           .style("font-family", "serif")
-          .style("font-size", "16px")
+          .style("font-size", "18px")
+          .append("text")
+          .text(", ")
           .append("text")
           .text(dataset.length > 0 ? dataset[dataset.length - 1].latitude : "")
           .style("font-family", "serif")
-          .style("font-size", "16px")
+          .style("font-size", "18px")
+          .append("text")
+          .text(", ")
           .append("text")
           .text(dataset.length > 0 ? dataset[dataset.length - 1].longitude : "")
           .style("font-family", "serif")
-          .style("font-size", "16px")
+          .style("font-size", "18px")
+          .append("text")
+          .text(", ")
           .append("text")
           .text(dataset.length > 0 ? dataset[dataset.length - 1].time : "")
           .style("font-family", "serif")
-          .style("font-size", "16px")
+          .style("font-size", "18px")
+          .append("text")
+          .text(", ")
           .append("text")
           .text(dataset.length > 0 ? dataset[dataset.length - 1].altitude : "")
           .style("font-family", "serif")
-          .style("font-size", "16px")
+          .style("font-size", "18px")
+          .append("text")
+          .text(", ")
           .append("text")
           .text(dataset.length > 0 ? dataset[dataset.length - 1].pitch : "")
           .style("font-family", "serif")
-          .style("font-size", "16px")
+          .style("font-size", "18px")
+          .append("text")
+          .text(", ")
           .append("text")
           .text(dataset.length > 0 ? dataset[dataset.length - 1].yaw : "")
           .style("font-family", "serif")
-          .style("font-size", "16px")
+          .style("font-size", "18px")
+          .append("text")
+          .text(", ")
           .append("text")
           .text(dataset.length > 0 ? dataset[dataset.length - 1].roll : "")
           .style("font-family", "serif")
-          .style("font-size", "16px")
+          .style("font-size", "18px")
+          .append("text")
+          .text(", ")
           .append("text")
           .text(dataset.length > 0 ? dataset[dataset.length - 1].spin : "")
           .style("font-family", "serif")
-          .style("font-size", "16px")
+          .style("font-size", "18px")
+          .append("text")
+          .text(", ")
           .append("text")
           .text(dataset.length > 0 ? dataset[dataset.length - 1].state : "")
           .style("font-family", "serif")
-          .style("font-size", "16px")
+          .style("font-size", "18px")
+          .append("text")
+          .text(", ")
           .append("text")
           .text(dataset.length > 0 ? dataset[dataset.length - 1].sats : "")
           .style("font-family", "serif")
-          .style("font-size", "16px")
+          .style("font-size", "18px")
+          .append("text")
+          .text(", ")
           .append("text")
           .text(dataset.length > 0 ? dataset[dataset.length - 1].opdata : "")
           .style("font-family", "serif")
-          .style("font-size", "16px");
+          .style("font-size", "18px");
       });
     };
 
@@ -207,8 +240,8 @@ export default function Display() {
   }, [toggle == true]);
 
   const divStyle = {
-    marginRight: "10px",
-    marginLeft: "0px",
+    marginRight: "5px",
+    marginLeft: "5px",
     backgroundColor: " #D3D3D3",
     height: "250px",
     width: "250px",
@@ -217,7 +250,8 @@ export default function Display() {
   };
 
   const headerStyle = {
-    backgroundColor: "teal",
+    marginTop: "0px",
+    backgroundColor: "orange",
     textAlign: "center",
     height: "30px",
     alignItems: "center",
@@ -226,74 +260,149 @@ export default function Display() {
   };
 
   return (
-    <>
-      <img
-        src="../Chaitanya_Bharathi_Institute_of_Technology_logo.png"
-        alt="CBIT logo"
-        style={{
-          width: "90px",
-          height: "90px",
-          marginLeft: "10px",
-          float: "left",
-        }}
-      ></img>
-      <div className="label">
-        <h4 style={{ marginLeft: "20px", marginTop: "0px" }} id="teamid"></h4>
-        &nbsp;&nbsp;&nbsp;
-        <h4
-          style={{ marginTop: "0px", marginRight: "20px" }}
-          id="time_stamp"
-        ></h4>
+    <div style={{ backgroundImage: `url(${background})`, height: "750px" }}>
+      <div
+        style={{ background: "black", position: "relative", height: "110px" }}
+      >
         <img
-          src="../indian_flag.jpg"
-          alt="Indian flag"
+          src="../Chaitanya_Bharathi_Institute_of_Technology_logo.png"
+          alt="CBIT logo"
           style={{
-            width: "160px",
-            height: "90px",
+            width: "90px",
+            height: "105px",
+            left: "10px",
+            marginRight: "5px",
             float: "left",
+            position: "absolute",
+            marginBottom: "20px",
           }}
         ></img>
-        <h4
-          style={{ marginLeft: "20px", marginTop: "0px" }}
-          id="packet_count"
-        ></h4>
-        <h4 style={{ marginLeft: "20px", marginTop: "0px" }} id="latitude"></h4>
-      </div>
-      <img
-        src="../astra-logo.jpg"
-        alt="Astrasat logo"
-        style={{
-          width: "120px",
-          height: "100px",
-          marginLeft: "10px",
-          float: "right",
-          marginTop: "-10px",
-        }}
-      ></img>
-      <br />
-      <div className="label">
-        <h4
-          style={{ marginLeft: "20px", marginTop: "0px" }}
-          id="longitude"
-        ></h4>
-        <h4 style={{ marginLeft: "116px", marginTop: "0px" }} id="time"></h4>
-        <h4 style={{ marginLeft: "270px", marginTop: "0px" }} id="sats"></h4>
-        <h4 style={{ marginLeft: "105px", marginTop: "0px" }} id="state"></h4>
-      </div>
-      <button onClick={() => setToggle(!toggle)} className="Togglebtn">
-        <h2 style={{ fontSize: "15px", marginBottom: "10px" }}>
-          {toggle ? "Stop" : "Start"}
-        </h2>
-      </button>
-      <div className="label">
-        <h4
+        <div className="label">
+          <h4
+            style={{
+              left: "120px",
+              top: "-20px",
+              position: "absolute",
+              color: "white",
+            }}
+            id="teamid"
+          ></h4>
+          &nbsp;&nbsp;&nbsp;
+          <h4
+            style={{
+              left: "400px",
+              top: "-20px",
+              color: "white",
+              position: "absolute",
+            }}
+            id="time_stamp"
+          ></h4>
+          <img
+            src="../indian_flag.jpg"
+            alt="Indian flag"
+            style={{
+              width: "120px",
+              height: "70px",
+              float: "left",
+              position: "absolute",
+              left: "570px",
+              top: "0px",
+            }}
+          ></img>
+          <h4
+            style={{
+              left: "720px",
+              top: "-20px",
+              color: "white",
+              position: "absolute",
+            }}
+            id="packet_count"
+          ></h4>
+          <h4
+            style={{
+              left: "960px",
+              top: "-20px",
+              color: "white",
+              position: "absolute",
+            }}
+            id="latitude"
+          ></h4>
+        </div>
+        <img
+          src="../astra-logo.jpg"
+          alt="Astrasat logo"
           style={{
-            marginLeft: "120px",
-            marginTop: "-50px",
-            width: "500px",
+            width: "120px",
+            height: "105px",
+            marginLeft: "10px",
+            float: "right",
+            marginTop: "-10px",
           }}
-          id="data"
-        ></h4>
+        ></img>
+        <br />
+        <div className="label">
+          <h4
+            style={{
+              left: "120px",
+              top: "15px",
+              color: "white",
+              position: "absolute",
+            }}
+            id="longitude"
+          ></h4>
+          <h4
+            style={{
+              left: "400px",
+              top: "15px",
+              color: "white",
+              position: "absolute",
+            }}
+            id="time"
+          ></h4>
+          <h4
+            style={{
+              left: "720px",
+              top: "15px",
+              color: "white",
+              position: "absolute",
+            }}
+            id="sats"
+          ></h4>
+          <h4
+            style={{
+              left: "960px",
+              top: "15px",
+              color: "white",
+              position: "absolute",
+            }}
+            id="state"
+          ></h4>
+        </div>
+        <button
+          onClick={() => setToggle(!toggle)}
+          style={{
+            left: "830px",
+            position: "relative",
+            top: "-8px",
+            width: "100px",
+            height: "30px",
+            paddingTop: "0px",
+          }}
+        >
+          <h7 style={{ paddingTop: "-10px" }}>{toggle ? "Stop" : "Start"}</h7>
+        </button>
+        <div className="label">
+          <h4
+            style={{
+              left: "120px",
+              top: "55px",
+              width: "1000px",
+              color: "white",
+              position: "absolute",
+            }}
+            id="data"
+          ></h4>
+        </div>
       </div>
       <div style={{ display: "flex" }}>
         <br />
@@ -341,7 +450,7 @@ export default function Display() {
       >
         <div
           style={{
-            backgroundColor: "teal",
+            backgroundColor: "orange",
             textAlign: "center",
             alignItems: "center",
             paddingTop: "5px",
@@ -365,7 +474,7 @@ export default function Display() {
       >
         <div
           style={{
-            backgroundColor: "teal",
+            backgroundColor: "orange",
             textAlign: "center",
             alignItems: "center",
             paddingTop: "5px",
@@ -389,7 +498,7 @@ export default function Display() {
       >
         <div
           style={{
-            backgroundColor: "teal",
+            backgroundColor: "orange",
             textAlign: "center",
             alignItems: "center",
             paddingTop: "5px",
@@ -413,7 +522,7 @@ export default function Display() {
       >
         <div
           style={{
-            backgroundColor: "teal",
+            backgroundColor: "orange",
             textAlign: "center",
             alignItems: "center",
             paddingTop: "5px",
@@ -425,6 +534,6 @@ export default function Display() {
         </div>
         <OpdataChart refreshMe={toggle} />
       </div>
-    </>
+    </div>
   );
 }

@@ -91,7 +91,7 @@ const RollChart = (props) => {
         <i
           class="fa fa-arrows-alt"
           style={{
-            top: "172px",
+            top: "165px",
             position: "relative",
             color: "white",
             left: "870px",
@@ -106,7 +106,7 @@ const RollChart = (props) => {
         <i
           class="fa fa-play"
           style={{
-            top: "172px",
+            top: "165px",
             position: "relative",
             left: "650px",
             color: "white",

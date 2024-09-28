@@ -23,7 +23,7 @@ class FullScreenSpin extends Component {
 
     d3.csv(data, (d) => ({
       time: parseInt(d.time_stamping),
-      spin: parseFloat(d.spin),
+      spin: parseFloat(d.gyro_spin_rate),
     })).then(
       (dataset) => {
         const slicedData = dataset.slice(-15);
@@ -183,7 +183,7 @@ class SummarySpin extends Component {
 
     d3.csv(data, (d) => ({
       time: parseInt(d.time_stamping),
-      spin: parseFloat(d.spin),
+      spin: parseFloat(d.gyro_spin_rate),
     })).then((dataset) => {
       const width = 1100;
       const height = 380;

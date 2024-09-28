@@ -90,7 +90,7 @@ const YawChart = (props) => {
         <i
           class="fa fa-arrows-alt"
           style={{
-            top: "172px",
+            top: "165px",
             position: "relative",
             color: "white",
             left: "350px",
@@ -105,7 +105,7 @@ const YawChart = (props) => {
         <i
           class="fa fa-play"
           style={{
-            top: "172px",
+            top: "165px",
             position: "relative",
             left: "130px",
             color: "white",

@@ -90,7 +90,7 @@ const OpdataChart = (props) => {
         <i
           class="fa fa-arrows-alt"
           style={{
-            top: "172px",
+            top: "165px",
             position: "relative",
             color: "white",
             left: "1130px",
@@ -105,7 +105,7 @@ const OpdataChart = (props) => {
         <i
           class="fa fa-play"
           style={{
-            top: "172px",
+            top: "165px",
             position: "relative",
             left: "910px",
             color: "white",

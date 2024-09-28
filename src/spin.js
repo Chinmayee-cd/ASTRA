@@ -30,7 +30,7 @@ const SpinChart = (props) => {
         .attr("width", width)
         .attr("height", height + 100)
         .append("g")
-        .attr("transform", `translate(45,5)`);
+        .attr("transform", `translate(42,18)`);
 
       const xScale = d3
         .scaleLinear()
@@ -58,14 +58,14 @@ const SpinChart = (props) => {
       svg
         .append("text")
         .attr("x", 95)
-        .attr("y", 180)
+        .attr("y", 185)
         .style("text-anchor", "middle")
         .style("fill", "black")
         .text("Time");
       svg
         .append("text")
         .attr("x", 90)
-        .attr("y", 40)
+        .attr("y", 33)
         .attr("transform", "rotate(90)")
         .style("text-anchor", "middle")
         .style("fill", "black")
